@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 700px;
+    background-color: white;
+    background:url('signup1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    margin-bottom: 30px;
+   
+  }
+  
+  h2 {
+    text-align: center;
+    color: #D3D3D3;
+    margin-top: 10px;
+    
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
+  }
+  
+  #showPassword {
+    margin-left: 4.5px;
+    
+  }
+  
+ 
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    
+  }
+  
+  a {
+    
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 83px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .centered-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .centered-button:hover {
+    background-color: #0056b3;
+  }
+ 
+input[type="checkbox"]#accept {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  small i {
+    font-style: italic;
+    color:black;
+  }
+  
+  
+  input[type="checkbox"]#accept:checked + small i {
+    color: #007bff;
+  }
+  div {
+    width:50%;
+    background: #191970;
+    padding-right:100px;
+    padding-left:100px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    height:100%;
+    margin-left:220px;
+  }
