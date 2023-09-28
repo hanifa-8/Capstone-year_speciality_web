@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup</title> 
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+    <body>
+        <div>
+        <h1>Create an accout</h1>
+        <h2>Let's get started</h2>
+        <form method="POST" action="signupSubmit" >
+
+            <label>Username:</label>
+            <input type="text" name="Username" placeholder="Username"><br>
+
+            <label>Email:</label>
+            <input type="email" name="Email"  placeholder="Email"><br>
+
+            
+            <label>Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="Password"><br>
+
+            <input type="checkbox" id="showPassword"><small>show password</small><br>
+            
+
+
+            <input type="checkbox" id="accept">
+            <small><i>I accept the Terms and Conditions and Privacy Policy</i></small><br>
+        
+
+            <button type="submit"  class="centered-button">Sign up</button>
+        </form>
+       
+        <p>Already have an account? <a href="/login">Login</a> here.</p>
+        <script>
+            const passwordInput = document.getElementById('Password');
+            const showPasswordCheckbox = document.getElementById('showPassword');
+        
+            showPasswordCheckbox.addEventListener('change', function () {
+                if (showPasswordCheckbox.checked) {
+                    passwordInput.type = 'text';
+                } else {
+                    passwordInput.type = 'Password';
+                }
+            });
+        </script>
+        </div>
+        
+    </body>
+</html>

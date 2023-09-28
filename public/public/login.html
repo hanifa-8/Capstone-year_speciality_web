@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title> 
+  <link rel="stylesheet" href="login.css">
+</head>
+
+    <body>
+        <div class="background-image-container"></div>
+        <h1>Login</h1>
+        <form method="POST" action="logingIn">
+
+            <label>Email:</label>
+            <input type="email" name="Email" placeholder="Email"><br>
+
+            <label>Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="Password"><br>
+            <input type="checkbox" id="showPassword">show password
+            <br>
+            <button type="submit" class="centered-button">Login</button>
+        </form>
+        <script>
+            const passwordInput = document.getElementById('Password');
+            const showPasswordCheckbox = document.getElementById('showPassword');
+        
+            showPasswordCheckbox.addEventListener('change', function () {
+                if (showPasswordCheckbox.checked) {
+                    passwordInput.type = 'text';
+                } else {
+                    passwordInput.type = 'Password';
+                }
+            });
+        </script>
+    </body>
+</html>
